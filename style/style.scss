@@ -1,0 +1,34 @@
+@import "normalize";
+@import "color";
+@import "header";
+
+
+body{
+    background-color: $seconday-color;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.section__fondo{
+    background-color: $fondo;
+}
+
+h3{
+    margin: 0;
+}
+
+.hr-h3 {
+    height: .8rem;
+    width: 80%;
+    border-radius: 0 5px 5px 0;
+    border: black;
+    background: $primary-color;
+    margin: 0;
+  }
+
+aside{
+    
+}
+
