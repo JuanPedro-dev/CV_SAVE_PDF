@@ -351,11 +351,11 @@ template {
 
 .header .name {
   text-align: center;
-  font-size: 4rem;
+  font-size: 8vmax;
   line-height: 1rem;
 }
 
-.header .name span {
+.header .name div {
   color: #FE5000;
 }
 
@@ -372,8 +372,46 @@ template {
 
 .header .profession {
   text-align: right;
-  font-size: 2rem;
+  font-size: 6    vmax;
   margin-right: 8rem;
+}
+
+body {
+  background-color: #50007F;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 1fr;
+      grid-template-columns: 30% 1fr;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  gap: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  height: 100vh;
+}
+
+.bgc {
+  background-color: #ffc456;
+}
+
+h3 {
+  margin: 0;
+  text-indent: 1rem;
+}
+
+.hr-h3 {
+  height: .8rem;
+  width: 80%;
+  border-radius: 0 5px 5px 0;
+  border: black;
+  background: #FE5000;
+  margin: 0;
+}
+
+.text {
+  text-indent: 14px;
+  padding-left: 1rem;
+  line-height: 1,4rem;
 }
 
 .bold {
@@ -384,31 +422,45 @@ ul {
   list-style-type: disclosure-closed;
 }
 
-body {
-  background-color: #50007F;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 30% 1fr;
-      grid-template-columns: 30% 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  gap: 5px;
+li {
+  padding-block: .5rem;
 }
 
-.section__fondo {
-  background-color: #ffc456;
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-h3 {
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 1.8rem;
+}
+
+.study-text {
   margin: 0;
+  text-indent: 1.4rem;
 }
 
-.hr-h3 {
-  height: .8rem;
-  width: 80%;
-  border-radius: 0 5px 5px 0;
-  border: black;
-  background: #FE5000;
-  margin: 0;
+h4 {
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
